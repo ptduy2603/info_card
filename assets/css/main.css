@@ -298,11 +298,6 @@
     resize: none;
 }
 
-#from__input-file {
-    padding: 0;
-    font-size: 1.6rem;
-}
-
 .form__error {
     font-size: 1.2rem;
     color: red;

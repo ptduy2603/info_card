@@ -66,7 +66,6 @@ btnCloseForm.onclick = (event) => {
     modalFormEl.classList.remove('active')
 }
 
-
 formInputs.forEach((input) => {
     input.oninput = (e) => {
         e.target.classList.remove('invalid')
@@ -76,7 +75,8 @@ formInputs.forEach((input) => {
 btnSendFormEl.onclick = (event)  => {
     if(handleValidateForm())
     {
+        window.alert("Your message was sent successfully!")
         event.target.submit();
-        btnCloseForm.click();
+        handleRefreshForm();
     }    
 }
