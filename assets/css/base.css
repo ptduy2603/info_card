@@ -1,0 +1,61 @@
+/* declare variables */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,500;1,600;1,700&family=Permanent+Marker&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color : #034C8C;
+    --text-color : #D5EAF2;    
+    --white-color: #fff;
+    --card-max-width : 500px;
+    --avatar-size : 180px;
+    --header-height : 140px;
+    --contact-icon-size : 50px;
+}
+
+/* reset CSS */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;    
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+}
+
+body {    
+    font-family: 'Poppins', sans-serif;         
+}
+
+.btn:active {
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+/* declare keyframes */
+
+@keyframes zoomIn {
+    from {
+        width: 0;
+        height: 0;
+    }
+    to {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+

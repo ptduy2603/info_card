@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duy's info card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="app">
+        <div class="card">
+           <header class="card__header">
+                <div class="card__avatar-frame">
+                    <img src="./assets/images/avatar.png" alt="My avatar" class="card__avatar-image">
+                </div>
+           </header>
+
+           <div class="card__container">
+                <h1 class="full-name">Phạm Thanh Duy</h1>
+                <p class="description">Hello, I'm <span class="name">Duy</span> 🌻, a student at University of Information Technology (UIT)</p>
+
+                <div class="card__social-media">
+                    <a href="https://www.facebook.com/thanhduy.pham.5496683/" class="card__social-media-channel facebook btn">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="http://zaloapp.com/qr/p/18dgdepog7t2c" class="card__social-media-channel zalo btn">
+                        <img src="./assets/icons/zalo.svg" alt="zaloIcon">
+                    </a>
+
+                    <a href="https://github.com/ptduy2603" class="card__social-media-channel github btn">
+                        <i class="fa-brands fa-github"></i></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCuGkOBthDSXo9Yo7FDySbyA?sub_confirmation=1" class="card__social-media-channel youtube btn">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/pham-thanh-duy-705745284/" class="card__social-media-channel linkin btn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                   
+                </div>
+
+                <a href="#" class="btn-contact btn"><span>Contact me</span></a>
+           </div>
+        </div>
+        <!-- background modal -->
+        <div class="modal"></div>
+        <div class="form-modal">
+            <div class="card form">
+                <h2 class="form__title">Contact Duy🌻</h2>
+                <form action="https://formsubmit.co/6bf542c3d05ba7c88e571aae170ccf8f" method="post" class="form__content">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;" />
+
+                    <!-- Disable captcha -->
+                    <input type="hidden" name="_captcha" value="false" />
+
+                    <!-- <input type="hidden" name="_next" value="#" /> -->
+
+                    <div class="form__group required">
+                        <label for="from__input-name">Your name:</label><br />
+
+                        <input type="text" name="Name" class="form__input" id="from__input-name" placeholder="Enter your name" required autofocus autocomplete="false" spellcheck="false">
+
+                        <span class="form__error">Please enter your name!</span>
+                    </div>
+    
+                    <div class="form__group required">
+                        <label for="form__input-email">Your email:</label><br />
+
+                        <input name="Email" type="email" class="form__input"
+                        id="form__input-email" placeholder="Enter your email" required spellcheck="false">
+
+                        <span class="form__error">Your email is invalid!</span>
+                    </div>
+    
+                    <!-- <div class="form__group">
+                        <label>Attach file:</label><br />
+
+                        <input type="file" name="File" class="form__input"
+                        id="form__input-file">
+
+                        <span class="form__error"></span>
+                    </div> -->
+    
+                    <div class="form__group required">
+                        <label for="form__massage">Your message:</label>
+
+                        <textarea name="Message" id="form__massage" class="form__input" rows="8" type="text"
+                        cols="60" placeholder="Enter your message" required spellcheck="false"></textarea> 
+
+                        <span class="form__error">Please enter your message!</span>   
+                    </div>
+
+                    <button type="submit" class="btn form__btn-send">Send</button>
+                </form>
+
+                <button class="btn form__btn-close" tabindex="-1"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SMTPJS help to send email using JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
