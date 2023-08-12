@@ -53,6 +53,10 @@ const handleValidateForm = () => {
 }
 
 //events
+window.onload = () => {
+    handleRefreshForm();
+}
+
 btnContactEl.onclick = (event) => {
     modalFormEl.classList.add('active')
 }
